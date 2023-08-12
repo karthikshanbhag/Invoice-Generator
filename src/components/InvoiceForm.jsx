@@ -887,7 +887,7 @@ const InvoiceForm = () => {
                 </span>
               )} */}
             </div>
-            <div className="">
+            
             <div className="mr-3 flex justify-between">
               <span className="font-bold">Discount:</span>
               <span>
@@ -895,7 +895,7 @@ const InvoiceForm = () => {
               </span>
             </div>
 
-            <div className="flex w-full justify-between md:w-1/2">
+            <div className="flex  justify-between ">
               <span className="font-bold">Tax:</span>
               <span className="">
                 ({tax || "0"}%){curval}:{taxRate.toFixed(2)}
@@ -914,7 +914,7 @@ const InvoiceForm = () => {
                 {curval}:{total % 1 === 0 ? total : total.toFixed(2)}
               </span>
             </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -999,10 +999,11 @@ const InvoiceForm = () => {
               Save Defaults
             </label>
           </div>
-          <div className="divide-gray-900/10">
+          <div 
+          className="border-t border-gray-900/10 pt-3 pl-2">
             <label
               htmlFor=""
-              className="w-full cursor-pointer py-2 px-4 text-sm text-black hover:rounded hover:bg-teal-700 hover:px-4 hover:text-white"
+              className=" w-full cursor-pointer py-2 px-4 text-lg text-black hover:rounded hover:bg-teal-700 hover:px-4 hover:text-white"
             >
               History
             </label>
